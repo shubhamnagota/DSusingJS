@@ -1,5 +1,5 @@
 // Time Complexity is O(n)
-function isAnagram(string1 = "", string2 = "") {
+const isAnagram = (string1 = "", string2 = "") => {
   if (string1.length !== string2.length) return false;
 
   let lookup = {};
@@ -13,7 +13,7 @@ function isAnagram(string1 = "", string2 = "") {
   }
 
   return true;
-}
+};
 
 const testCases = [
   ["aaa", "aa"],

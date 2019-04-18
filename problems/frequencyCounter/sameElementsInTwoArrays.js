@@ -11,7 +11,7 @@ const isSameNaiveApproach = (arr1 = [], arr2 = []) => {
 };
 
 // Time Complexity is O(n)
-function isSameRefactoredApproach(arr1 = [], arr2 = []) {
+const isSameRefactoredApproach = (arr1 = [], arr2 = []) => {
   if (arr1.length !== arr2.length) return false;
 
   let obj1 = {};
@@ -29,7 +29,7 @@ function isSameRefactoredApproach(arr1 = [], arr2 = []) {
     if (obj1[key] !== obj2[key]) return false;
   }
   return true;
-}
+};
 
 const testCases = [
   [[1, 2, 3], []],
